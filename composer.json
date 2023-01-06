@@ -4,6 +4,12 @@
     "keywords": [
         "nanopkg",
         "laravel",
+        "laravel-package",
+        "bd-phone-verification-rule",
+        "bd-phone-verification",
+        "Bangladesh-Phone-Verification",
+        "Bangladesh-Phone-Verification-Rule",
+        "Bangladesh-Phone-Verification-Validation",
         "laravel-bd-phone-verification-rule"
     ],
     "homepage": "https://github.com/nanopkg/laravel-bd-phone-verification-rule",
