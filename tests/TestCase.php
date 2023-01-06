@@ -3,8 +3,8 @@
 namespace Nanopkg\LaravelBdPhoneVerificationRule\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Nanopkg\LaravelBdPhoneVerificationRule\LaravelBdPhoneVerificationRuleServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
