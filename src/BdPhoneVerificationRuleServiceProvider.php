@@ -14,8 +14,6 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
  *
  * @link https://iqbalhasan.dev Author Homepage
  *
- * @version 1.0.0
- *
  * @license LICENSE The MIT License
  */
 class BdPhoneVerificationRuleServiceProvider extends PackageServiceProvider
