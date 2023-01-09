@@ -1,14 +1,14 @@
 <?php
 
-namespace Nanopkg\LaravelBdPhoneVerificationRule;
+namespace Nanopkg\BdPhoneVerificationRule;
 
 use Illuminate\Support\Facades\Validator;
-use Nanopkg\LaravelBdPhoneVerificationRule\Rules\LaravelBdPhoneVerificationRule;
+use Nanopkg\BdPhoneVerificationRule\Rules\BdPhoneVerificationRule;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 /**
- * Class LaravelBdPhoneVerificationRuleServiceProvider
+ * Class BdPhoneVerificationRuleServiceProvider
  *
  * @author IQBAL HASAN <iqbalhasan.dev@gmail.com>
  *
@@ -18,7 +18,7 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
  *
  * @license LICENSE The MIT License
  */
-class LaravelBdPhoneVerificationRuleServiceProvider extends PackageServiceProvider
+class BdPhoneVerificationRuleServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -38,9 +38,9 @@ class LaravelBdPhoneVerificationRuleServiceProvider extends PackageServiceProvid
      */
     public function boot()
     {
-        $alias = (new LaravelBdPhoneVerificationRule)->__toString();
+        $alias = (new BdPhoneVerificationRule)->__toString();
         if ($alias) {
-            Validator::extend($alias, LaravelBdPhoneVerificationRule::class.'@passes', (new LaravelBdPhoneVerificationRule)->message());
+            Validator::extend($alias, BdPhoneVerificationRule::class.'@passes', (new BdPhoneVerificationRule)->message());
         }
     }
 }

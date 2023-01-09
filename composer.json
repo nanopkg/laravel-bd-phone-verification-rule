@@ -41,13 +41,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Nanopkg\\LaravelBdPhoneVerificationRule\\": "src",
-            "Nanopkg\\LaravelBdPhoneVerificationRule\\Database\\Factories\\": "database/factories"
+            "Nanopkg\\BdPhoneVerificationRule\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nanopkg\\LaravelBdPhoneVerificationRule\\Tests\\": "tests"
+            "Nanopkg\\BdPhoneVerificationRule\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -67,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nanopkg\\LaravelBdPhoneVerificationRule\\LaravelBdPhoneVerificationRuleServiceProvider"
+                "Nanopkg\\BdPhoneVerificationRule\\BdPhoneVerificationRuleServiceProvider"
             ],
             "aliases": {
-                "LaravelBdPhoneVerificationRule": "Nanopkg\\LaravelBdPhoneVerificationRule\\Facades\\LaravelBdPhoneVerificationRule"
+                "BdPhoneVerificationRule": "Nanopkg\\BdPhoneVerificationRule\\Facades\\BdPhoneVerificationRule"
             }
         }
     },

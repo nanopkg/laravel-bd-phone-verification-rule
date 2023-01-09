@@ -1,11 +1,11 @@
 <?php
 
-namespace Nanopkg\LaravelBdPhoneVerificationRule\Rules;
+namespace Nanopkg\BdPhoneVerificationRule\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
 /**
- * Class LaravelBdPhoneVerificationRule
+ * Class BdPhoneVerificationRule
  *
  * @author IQBAL HASAN <iqbalhasan.dev@gmail.com>
  *
@@ -15,7 +15,7 @@ use Illuminate\Contracts\Validation\Rule;
  *
  * @license LICENSE The MIT License
  */
-class LaravelBdPhoneVerificationRule implements Rule
+class BdPhoneVerificationRule implements Rule
 {
     protected $alias = 'bdPhone';
 

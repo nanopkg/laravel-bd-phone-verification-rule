@@ -1,36 +1,18 @@
 <?php
 
-namespace Nanopkg\LaravelBdPhoneVerificationRule\Tests;
+namespace Nanopkg\BdPhoneVerificationRule\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Nanopkg\LaravelBdPhoneVerificationRule\LaravelBdPhoneVerificationRuleServiceProvider;
+use Nanopkg\BdPhoneVerificationRule\BdPhoneVerificationRuleServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Nanopkg\\LaravelBdPhoneVerificationRule\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
-    }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelBdPhoneVerificationRuleServiceProvider::class,
+            BdPhoneVerificationRuleServiceProvider::class,
         ];
-    }
-
-    public function getEnvironmentSetUp($app)
-    {
-        config()->set('database.default', 'testing');
-
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-bd-phone-verification-rule_table.php.stub';
-        $migration->up();
-        */
     }
 }
